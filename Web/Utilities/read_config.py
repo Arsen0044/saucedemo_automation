@@ -38,6 +38,9 @@ class Constants:
     app_info_configs = ReadAppInfoConfig()
     user_data_config = ReadUserDataConfig()
 
+    """Links"""
+    base_url = app_info_configs.get_base_url()
+
     """User Data"""
     standard_user_name = user_data_config.get_standard_user_name()
     standard_user_password = user_data_config.get_standard_user_password()
